@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	
+	<link href="../dodatno/bootstrap.min.css" rel="stylesheet" />
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css" rel="stylesheet" />
+	<link href="../dodatno/css.css" rel="stylesheet" type="text/css" />
+
+	<title>Web Dusica Trbovic</title>
+	<link rel="shortcut icon" href="../media/logo.png">
+	<script>
+		function openForm() {
+		  document.getElementById("myForm").style.display = "block";
+		}
+		
+		function closeForm() {
+		  document.getElementById("myForm").style.display = "none";
+		}
+	</script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header>
+			<table style="width: 100%;">
+				<tbody>
+				<tr>
+				<th>
+					<img class="logo" src="../media/logo.png"></img>
+				</th>
+				
+				<td class="navbar">
+					<a href="../main.html">Lista Pozorista</a>
+					<a href="../stranice/admin.html">Administratorska Podesavanja</a>
+					<button class="open-button" onclick="openForm()">Prijavi se/Registruj se</button>
+
+					<div class="form-popup" id="myForm">
+					<form action="/action_page.php" class="form-container">
+						<h2>Prijavi se/Registruj se</h2>
+
+						<label for="email"><b>Email</b></label>
+						<input type="text" name="email" required>
+
+						<label for="psw"><b>Sifra</b></label>
+						<input type="password" name="psw" required>
+
+						<button type="submit" class="btn">Prijavite Se</button>
+						<button type="button" class="btn cancel" onclick="closeForm()">Zatvori</button>
+					</form>
+					</div>
+				</td>
+				</tr>
+				</tbody>
+			</table>
+		</header>
+
+		<div class="wrapper">
+			<form class="form-container" style="max-width: 100%;">
+				<label for="naziv"><b>Naziv Predstave</b></label>
+				<input type="text" name="naziv" value="Lutka sa Kreveta broj 21" required>
+				<label for="naziv"><b>Kratak Opis</b></label>
+				<input type="text" name="naziv" value="Fusce tincidunt vitae felis vitae blandit. Fusce pulvinar porttitor laoreet. Nullam justo est, venenatis gravida venenatis at, viverra semper est. Integer a maximus turpis. In rutrum quis sapien vitae rutrum. Vivamus hendrerit feugiat molestie. Pellentesque eleifend in mi ac faucibus." required>
+				
+				<label for="naziv"><b>Kod Predstave</b></label>
+				<input type="text" name="naziv" value="LSKB21" required>
+				<label for="naziv"><b>Zanr</b></label>
+				<input type="text" name="naziv" value="Drama" required>
+				<label for="naziv"><b>Vreme Trajanja</b></label>
+				<input type="text" name="naziv" value="192 minuta" required>
+				<label for="naziv"><b>Cena Karte</b></label>
+				<input type="text" name="naziv" value="900 dinara" required>
+				<label for="naziv"><b>Maksimalan Broj Osoba</b></label>
+				<input type="text" name="naziv" value="48" required>
+
+				<label for="naziv"><b>Detaljan Opis</b></label>
+				<input type="text" name="naziv" value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempus, odio ac egestas cursus, nisi nulla tristique ex, id venenatis arcu risus et ligula. Nulla a mauris ligula. Sed metus justo, consequat id sagittis vitae, dapibus ut augue. Phasellus mattis velit turpis, eget commodo eros ultricies vel. Praesent at erat ante. Phasellus vitae nunc varius, venenatis nisl in, luctus est. Proin convallis tellus eu augue vulputate laoreet. Etiam eget dolor erat. Sed at odio quam. Sed et tellus pharetra, semper dui id, tempor enim. Praesent luctus id purus et aliquam. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+				Nunc pharetra nunc non lobortis placerat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla vulputate odio eu finibus ultricies. Duis iaculis tempor nisl ut aliquet. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus quis vulputate quam. Nulla maximus sollicitudin libero, vitae fermentum erat accumsan eu. Nullam vehicula viverra massa vitae ultrices. Proin lacus lectus, laoreet eget porta eget, tempor id quam. Donec viverra eleifend ligula, a scelerisque nulla lacinia non. Vestibulum vel mi porttitor, consequat turpis ut, viverra magna. Curabitur vulputate diam sit amet augue consectetur, et tempus enim sollicitudin. Vestibulum varius sapien vel elementum volutpat. Ut tempus tristique arcu at accumsan.
+				Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam nec mattis elit, sit amet convallis arcu. Curabitur a turpis in tellus porttitor malesuada sed id metus. Etiam in urna et nisl pharetra mollis eu vitae dolor. Sed in justo feugiat, vestibulum neque non, sollicitudin massa. Sed quis sapien pellentesque, egestas urna a, accumsan turpis. Mauris eget felis elementum, consequat lorem vitae, lacinia lorem. Fusce leo mi, dapibus sed mi sed, mollis semper magna. Phasellus quis diam risus. Curabitur blandit vulputate egestas. Aenean congue ipsum faucibus nisl malesuada laoreet. Nullam luctus efficitur eros et convallis. Praesent luctus a massa vitae condimentum. Maecenas sodales convallis dapibus. Sed quis interdum lectus.
+				" required>
+				
+			<button type="button" class="btn sacuvaj">Sacuvaj Promene</button><br>
+			<button type="button" class="btn cancel" onclick="window.location.href='predstava.html'">Vrati se na Predhodnu Stranicu</button>
+			</form>
+		</div>
+		<footer >
+			&copy; All Rights Deserved trbovicdusica@gmail.com
+		</footer>
+		</div>
+	</div>
+</body>
+
+</html>

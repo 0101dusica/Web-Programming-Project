@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	
+	<link href="../dodatno/bootstrap.min.css" rel="stylesheet" />
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css" rel="stylesheet" />
+	<link href="../dodatno/css.css" rel="stylesheet" type="text/css" />
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<title>Web Dusica Trbovic</title>
+	<link rel="shortcut icon" href="../media/logo.png">
+	<script>
+		function openForm() {
+		  document.getElementById("myForm").style.display = "block";
+		}
+		
+		function closeForm() {
+		  document.getElementById("myForm").style.display = "none";
+		}
+	</script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header>
+			<table style="width: 100%;">
+				<tbody>
+				<tr>
+				<th>
+					<img class="logo" src="../media/logo.png"></img>
+				</th>
+				
+				<td class="navbar">
+					<a href="../main.html">Lista Pozorista</a>
+					<a href="../stranice/admin.html">Administratorska Podesavanja</a>
+					<button class="open-button" onclick="openForm()">Prijavi se/Registruj se</button>
+
+					<div class="form-popup" id="myForm">
+					<form action="/action_page.php" class="form-container">
+						<h2>Prijavi se/Registruj se</h2>
+
+						<label for="email"><b>Email</b></label>
+						<input type="text" name="email" required>
+
+						<label for="psw"><b>Sifra</b></label>
+						<input type="password" name="psw" required>
+
+						<button type="submit" class="btn">Prijavite Se</button>
+						<button type="button" class="btn cancel" onclick="closeForm()">Zatvori</button>
+					</form>
+					</div>
+				</td>
+				</tr>
+				</tbody>
+			</table>
+		</header>
+
+		<div class="wrapper korisnik" style="max-width: 70%!important;">
+			<h2>Lista svih Korisnika</h2>
+			<table style="width: 100%; text-align: center !important;">
+				<tbody>
+				<tr class="korisnik">
+					<th>Korisnicko Ime</th>
+					<th>Ime</th>
+					<th>Prezime</th>
+					<th>Email</th>
+				</tr >
+				<tr class="korisnik">
+					<td class="korisnik2" onclick="window.location.href='korisnik.html'">dusan123</td>
+					<td>Dusan</td>
+					<td>Dusanovic</td>
+					<td>dusan@gmail.com</td>
+				</tr>
+				<tr class="korisnik">
+					<td class="korisnik2" onclick="window.location.href='korisnik.html'">sara123</td>
+					<td>Sara</td>
+					<td>Saric</td>
+					<td>sara@yahoo.com</td>
+				</tr>
+				<tr class="korisnik">
+					<td class="korisnik2" onclick="window.location.href='korisnik.html'">marko371</td>
+					<td>Marko</td>
+					<td>Markovic</td>
+					<td>markom@neobee.net</td>
+				</tr>
+				<tr class="korisnik">
+					<td class="korisnik2" onclick="window.location.href='korisnik.html'">nikolap123</td>
+					<td>Nikola</td>
+					<td>Petrovic</td>
+					<td>nikola@gmail.com</td>
+				</tr>
+				<tr class="korisnik">
+					<td class="korisnik2" onclick="window.location.href='korisnik.html'">relja23</td>
+					<td>Relja</td>
+					<td>Ruzic</td>
+					<td>relja@gmail.com</td>
+				</tr>
+				</tbody>
+			</table>
+
+		</div>
+
+		<footer >
+			&copy; All Rights Deserved trbovicdusica@gmail.com
+		</footer>
+		</div>
+	</div>
+</body>
+
+</html>
