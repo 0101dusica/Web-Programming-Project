@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	
+	<link href="../dodatno/bootstrap.min.css" rel="stylesheet" />
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css" rel="stylesheet" />
+	<link href="../dodatno/css.css" rel="stylesheet" type="text/css" />
+	<script src="../dodatno/javaScript.js" type="text/javascript"></script>
+	<script src="../dodatno/jquery-2.1.4.min.js" type="text/javascript"></script>
+
+	<title>Web Dusica Trbovic</title>
+	<link rel="shortcut icon" href="../media/logo.png">
+</head>
+
+<body onload="getPredstave()">
+	<div class="wrapper">
+		<header>
+			<table style="width: 100%;">
+				<tbody>
+				<tr>
+				<th>
+					<img class="logo" src="../media/logo.png"></img>
+				</th>
+				
+				<td class="navbar">
+					<a href="../main.html">Lista Pozorista</a>
+					<a href="../stranice/admin.html">Administratorska Podesavanja</a>
+					<button id="prijavi_se_dugme" class="open-button" onclick="openForm()">Prijavi se/Registruj se</button>
+
+					<div class="form-popup" id="myForm">
+					</div>
+				</td>
+				</tr>
+				</tbody>
+			</table>
+		</header>
+
+		<div>
+			<h2 id="naziv_pozorista"></h2>
+			<ul class="pozorista">
+				<table style="width: 100%;">
+					<tbody id = 'all_predstave'>				
+					</tbody>
+				</table>
+			</ul>
+		</div>
+		<footer >
+			&copy; All Rights Deserved trbovicdusica@gmail.com
+		</footer>
+		</div>
+	</div>
+</body>
+
+</html>

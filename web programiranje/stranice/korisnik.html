@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	
+	<link href="../dodatno/bootstrap.min.css" rel="stylesheet" />
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css" rel="stylesheet" />
+	<link href="../dodatno/css.css" rel="stylesheet" type="text/css" />
+	<script src="../dodatno/javaScript.js" type="text/javascript"></script>
+	<script src="../dodatno/jquery-2.1.4.min.js" type="text/javascript"></script>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<title>Web Dusica Trbovic</title>
+	<link rel="shortcut icon" href="../media/logo.png">
+	<script>
+		function openForm() {
+		  document.getElementById("myForm").style.display = "block";
+		}
+		
+		function closeForm() {
+		  document.getElementById("myForm").style.display = "none";
+		}
+	</script>
+</head>
+
+<body onload="getKorisnik()">
+	<div class="wrapper">
+		<header>
+			<table style="width: 100%;">
+				<tbody>
+				<tr>
+				<th>
+					<img class="logo" src="../media/logo.png"></img>
+				</th>
+				
+				<td class="navbar">
+					<a href="../main.html">Lista Pozorista</a>
+					<a href="../stranice/admin.html">Administratorska Podesavanja</a>
+					<button class="open-button" onclick="openForm()">Prijavi se/Registruj se</button>
+
+					<div class="form-popup" id="myForm">
+					<form action="/action_page.php" class="form-container">
+						<h2>Prijavi se/Registruj se</h2>
+
+						<label for="email"><b>Email</b></label>
+						<input type="text" name="email" required>
+
+						<label for="psw"><b>Sifra</b></label>
+						<input type="password" name="psw" required>
+
+						<button type="submit" class="btn">Prijavite Se</button>
+						<button type="button" class="btn cancel" onclick="closeForm()">Zatvori</button>
+					</form>
+					</div>
+				</td>
+				</tr>
+				</tbody>
+			</table>
+		</header>
+
+		<div class="wrapper">
+			<article>
+			<h2 id="naziv"></h2>
+			<div class="wrapper korisnik">
+			<a class="p-naslov2" id="korisnicko_ime"> Korisnicko Ime: </a>
+			<a class="p-naslov2" id="lozinka"> Lozinka: </a>
+			<a class="p-naslov2" id="email"> Email Adresa: </a>
+			<a class="p-naslov2" id="ime"> Ime: </a>
+			<a class="p-naslov2" id="prezime"> Prezime: </a>
+			<a class="p-naslov2" id="datum_rodjenja"> Datum  Rodjenja: </a>
+			<a class="p-naslov2" id="adresa"> Adresa: </a>
+			<a class="p-naslov2" id="broj_telefona"> Broj Telefona: </a>
+			</div>
+		
+			<a id="dugme_izmena"></a><br>
+			<a id="dugme_brisanje"></a><br>
+					
+		</article>
+		</div>
+		<footer >
+			&copy; All Rights Deserved trbovicdusica@gmail.com
+		</footer>
+		</div>
+	</div>
+</body>
+
+</html>

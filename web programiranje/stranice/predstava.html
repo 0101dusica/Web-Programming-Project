@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	
+	<link href="../dodatno/bootstrap.min.css" rel="stylesheet" />
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css" rel="stylesheet" />
+	<link href="../dodatno/css.css" rel="stylesheet" type="text/css" />
+	<script src="../dodatno/javaScript.js" type="text/javascript"></script>
+	<script src="../dodatno/jquery-2.1.4.min.js" type="text/javascript"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js" type="text/javascript"></script>
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<title>Web Dusica Trbovic</title>
+	<link rel="shortcut icon" href="../media/logo.png">
+</head>
+
+<body onload="getOpisPredstave()">
+	<div class="wrapper">
+		<header>
+			<table style="width: 100%;">
+				<tbody>
+				<tr>
+				<th>
+					<img class="logo" src="../media/logo.png"></img>
+				</th>
+				
+				<td class="navbar">
+					<a href="../main.html">Lista Pozorista</a>
+					<a href="../stranice/admin.html">Administratorska Podesavanja</a>
+					<button id="prijavi_se_dugme" class="open-button" onclick="openForm()">Prijavi se/Registruj se</button>
+
+					<div class="form-popup" id="myForm">
+					</div>
+				</td>
+				</tr>
+				</tbody>
+			</table>
+		</header>
+
+		<div class="wrapper" style="text-align: center !important;">
+			<h2 id="opis_naziv"></h2><br>
+			<a class="p-naslov2" id ="opis_kratakOpis"> Kratak Opis <br></a><br>
+			<table class="wrapper" style="width: 100%;" id="opis_tabela">
+			</table>
+			<a class="p-naslov2" id="opis_detaljanOpis"> Detaljan Opis <br></a> <br>
+
+			<a class="p-naslov2" id="zvezdice"> Ocenite Predstavu: </a>
+
+			<a class="p-naslov2"> Prosecna Ocena: </a>
+				<a class="p-opis2" id="prosecna_ocena"></a><br>
+
+			<table class="wrapper" style="width: 80% !important; ">
+				<tbody>
+				<tr>
+				<th style="width: 20%; text-align: right; padding: 2%;">
+					<a class="p-naslov2"> 5 </a> <span class="fa fa-star prikaz"></span><br>
+				</th>
+				
+				<th style="width: 70%;">
+					<div class="container">
+						<div class="skills pet" id = "skills pet"></div><br>
+					</div>
+				</th>
+				<th style="width: 10%; text-align: right;" id="ocene_broj_pet">
+				</th>
+				</tr>
+
+				<tr>
+					<th style="width: 20%; text-align: right; padding: 2%;">
+						<a class="p-naslov2"> 4 </a> <span class="fa fa-star prikaz"></span><br>
+					</th>
+					
+					<th style="width: 70%;">
+						<div class="container">
+							<div class="skills cetiri" id = "skills cetiri"></div><br>
+						</div>
+					</th>
+					<th style="width: 10%; text-align: right;" id="ocene_broj_cetiri">
+					</th>
+					</tr>
+
+				<tr>
+					<th style="width: 20%; text-align: right; padding: 2%;">
+						<a class="p-naslov2"> 3 </a> <span class="fa fa-star prikaz"></span><br>
+					</th>
+					
+					<th style="width: 70%;">
+						<div class="container">
+							<div class="skills tri" id = "skills tri"></div><br>
+						</div>
+					</th>
+					<th style="width: 10%; text-align: right;" id="ocene_broj_tri">
+					</th>
+					</tr>
+
+				<tr>
+					<th style="width: 20%; text-align: right; padding: 2%;">
+						<a class="p-naslov2"> 2 </a> <span class="fa fa-star prikaz"></span><br>
+					</th>
+					
+					<th style="width: 70%;">
+						<div class="container">
+							<div class="skills dva" id = "skills dva"></div><br>
+						</div>
+					</th>
+					<th style="width: 10%; text-align: right;" id="ocene_broj_dva">
+					</th>
+					</tr>
+
+				<tr>
+					<th style="width: 20%; text-align: right; padding: 2%;">
+						<a class="p-naslov2"> 1 </a> <span class="fa fa-star prikaz"></span><br>
+					</th>
+					
+					<th style="width: 70%;">
+						<div class="container">
+							<div class="skills jedan" id = "skills jedan"></div><br>
+						</div>
+					</th>
+					<th style="width: 10%; text-align: right;" id="ocene_broj_jedan">
+					</th>
+					</tr>
+				</tbody>
+			</table>
+
+			<div class="wrapper"  style="width: 80% !important;">
+			<a class="p-naslov2"><br> Unesite Vas Komentar:</a><br>
+			<div id="forma_komentara"></div>
+			
+			<a class="p-naslov2" >Ostali Komentari:</a><br>
+			<div id="komentar_lista"></div><br>
+			
+		</div>
+
+			<a id="izmena_predstava"></a><br>
+			<a id="obrisi_predstavu"></a><br>
+		</article>
+		</div>
+		<footer >
+			&copy; All Rights Deserved trbovicdusica@gmail.com
+		</footer>
+		</div>
+	</div>
+</body>
+
+</html>
